@@ -56,8 +56,8 @@ public class Solver {
 			this.setStates(false, true, false); // Co nghiem
 			if (delta > 0) {
 				root = new Vector<Double>();
-				double x1 = - b - Math.sqrt(delta) / 2 / a;
-				double x2 = - b + Math.sqrt(delta) / 2 / a;
+				double x1 = (- b - Math.sqrt(delta)) / 2 / a;
+				double x2 = (- b + Math.sqrt(delta)) / 2 / a;
 				root.add(x1);
 				root.add(x2);
 			} else if (delta == 0) {
